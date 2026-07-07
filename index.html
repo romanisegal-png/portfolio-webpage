@@ -454,6 +454,57 @@
     grid-column: 2;
   }
 
+  /* ── TRAINING & LABS ── */
+  .training-card {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    background: #fff;
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--maroon);
+    padding: 1.5rem 1.75rem;
+  }
+
+  .training-badge { flex-shrink: 0; line-height: 0; }
+  .training-badge img { display: block; max-width: 100%; height: auto; }
+
+  .training-info { flex: 1; min-width: 240px; }
+
+  .training-info h3 {
+    font-family: 'EB Garamond', serif;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--maroon);
+    margin-bottom: 0.4rem;
+  }
+
+  .training-info p {
+    font-size: 0.85rem;
+    color: var(--maroon);
+    line-height: 1.65;
+    font-style: italic;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+
+  .training-link {
+    display: inline-block;
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fff;
+    background: var(--maroon);
+    padding: 0.55rem 1.1rem;
+    text-decoration: none;
+    border: 1px solid var(--maroon);
+    transition: background 0.2s;
+  }
+
+  .training-link:hover { background: var(--maroon-dark); }
+
   /* ── CONTACT ── */
   .contact-row {
     display: flex;
@@ -610,6 +661,7 @@
     <li><a href="#about">About</a></li>
     <li><a href="https://privacy-cyber-careers.vercel.app/" target="_blank">Career Paths</a></li>
     <li><a href="#projects">Portfolio</a></li>
+    <li><a href="#training">Training</a></li>
     <li><a href="#education">Education</a></li>
     <li><a href="#experience">Experience</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -1049,6 +1101,26 @@
       }
     });
   </script>
+
+  <!-- TRAINING & LABS -->
+  <section id="training">
+    <div class="content">
+      <div class="section-header">
+        <span class="section-label">Training &amp; Labs</span>
+        <h2>Hands-on cybersecurity practice</h2>
+      </div>
+      <div class="training-card">
+        <a class="training-badge" href="https://tryhackme.com/p/rsegal1" target="_blank" rel="noopener">
+          <img src="https://tryhackme-badges.s3.amazonaws.com/rsegal1.png" alt="Roman Segal's live TryHackMe progress badge">
+        </a>
+        <div class="training-info">
+          <h3>TryHackMe</h3>
+          <p>Ongoing hands-on training in offensive and defensive security through TryHackMe's guided labs and challenge rooms — spanning network security, Linux and Windows exploitation, SIEM and log analysis, and threat investigation. The badge shows my live rank, rooms completed, and daily streak.</p>
+          <a class="training-link" href="https://tryhackme.com/p/rsegal1" target="_blank" rel="noopener">View TryHackMe profile →</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- EDUCATION -->
   <section id="education">
