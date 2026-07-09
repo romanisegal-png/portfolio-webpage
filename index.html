@@ -506,6 +506,36 @@
 
   .training-link:hover { background: var(--maroon-dark); }
 
+  /* ── TESTIMONIALS ── */
+  .testimonial {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--gold);
+    padding: 1.5rem 1.75rem;
+    margin-bottom: 1rem;
+  }
+
+  .testimonial-quote {
+    font-family: 'EB Garamond', serif;
+    font-size: 1.12rem;
+    font-style: italic;
+    color: var(--charcoal);
+    line-height: 1.7;
+    margin-bottom: 0.75rem;
+  }
+
+  .testimonial-quote::before { content: '\201C'; color: var(--maroon); }
+  .testimonial-quote::after { content: '\201D'; color: var(--maroon); }
+
+  .testimonial-author {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--maroon);
+    letter-spacing: 0.03em;
+  }
+
+  .testimonial-author span { color: var(--muted); font-weight: 400; font-style: italic; }
+
   /* ── CONTACT ── */
   .contact-row {
     display: flex;
@@ -665,6 +695,7 @@
     <li><a href="#training">Training</a></li>
     <li><a href="#education">Education</a></li>
     <li><a href="#experience">Experience</a></li>
+    <li><a href="#testimonials">References</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
@@ -1258,6 +1289,20 @@
         </div>
       </div>
 
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials">
+    <div class="content">
+      <div class="section-header">
+        <span class="section-label">References</span>
+        <h2>What others say</h2>
+      </div>
+      <div class="testimonial">
+        <p class="testimonial-quote">Roman is trustworthy and reliable, and always delivers. I have utilized Roman in a variety of ways, and have always been pleased with his work.</p>
+        <p class="testimonial-author">David Mayer <span>· Vice President, Business Development, The TRIZ Group — former supervisor</span></p>
+      </div>
     </div>
   </section>
 
